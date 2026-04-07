@@ -1,0 +1,30 @@
+body {
+    margin:0;
+}
+
+.header {
+    width:100vw;
+    height:15vh;
+    background-color:rgba(64, 64, 64, 0.25);
+    z-index:1;
+}
+
+.logo {
+    padding-top:0;
+    height:15vh;
+    width:15vh;
+}
+
+.title-background {
+    position:absolute;
+    z-index: -1;
+    margin-top:-15vh;
+    width:100vw;
+}
+
+.title {
+    padding-top:50vh;
+    text-align:center;
+    color:white;
+    font-size: 10px;
+}
