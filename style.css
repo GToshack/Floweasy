@@ -1,38 +1,69 @@
 body {
     margin:0;
+    overflow-x: hidden;
 }
 
 .header {
     position:fixed;
     width:100vw;
     height:15vh;
-    background-color:rgba(64, 64, 64, 0.4);
+    background-color:rgba(64, 64, 64, 0.25);
     z-index:1;
 }
 
 .logo {
     height:15vh;
     width:15vh;
-    display:inline;
+    display:inline-grid;
 }
 
-.pages {
-    display:inline;
-    padding-inline: 50px;
-    FIX MEEEEEEEE
+.grid-container {
+    display:inline-grid;
+    position:absolute;
+    grid-template-columns: auto auto auto auto;
+    gap: 10vw;
+    color:white;
+    padding-block:7.5vh;
+    padding-left:10vw;
+    font-size: 3rem;
+    font-family: "Lora", sans-serif;
+    font-weight: 800;
+
+    .link:hover {
+        color:rgba(149, 206, 214);
+        transition: color 150ms;
+    }
+
+    .link:not(:hover) {
+        color:white;
+        transition: color 500ms;
+    }
 }
+
+.main {
+    border-bottom: inset 3px rgb(101, 155, 121);
+}
+
+.header > div > a:link, a:visited {
+    color:white;
+    text-decoration: none;
+}
+
 
 .title-background {
     background-image: url('Assets/title-background.png');
     background-position-y: bottom;
     z-index: -1;
+    background-size: cover;
     width:100vw;
     background-repeat: no-repeat;
 }
 
 .title {
     text-align:center;
-    font-size: 2em;
+    color: white;
+    font-family: "Corinthia", cursive;
+    font-size: 6rem;
     padding: 50vh;
     margin:0;
 }
