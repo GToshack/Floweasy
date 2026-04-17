@@ -106,15 +106,24 @@ body {
 
 .box {
     text-align:center;
-    background-color:rgb(205, 205, 205);
+    background-color:rgb(77, 75, 115);
     margin-inline: auto;
+    color:rgb(155, 155, 155);
     width:200px;
     border-radius: 10px;
     margin-bottom:15px;
-    line-height: 1.5;
+    line-height: 1;
     font-family: "Lora", sans-serif;
+    padding-top:10px;
 
     >.pkg {
         font-weight: 800;
+        font-size: 1.5rem;
+        color:white;
+    }
+
+    p {
+        line-height: 1;
+        margin:0;
     }
 }
